@@ -9,7 +9,7 @@
       <p>las flechitas indican la correlativa, podes moverte con las flechitas y salis con el escape, el espacio, el enter o la Q. si te trabas sos bien pelotudo flaco, deja la carrera...</p>
       <br>
       <p><b>typescript es el goty of the year, no mas palabras señor juez</b></p>
-      <img class="gordi" src="/gordo_gradle.webp" alt="gordo_gradle.webp">
+      <img class="gordi" src="./gordo_gradle.webp" alt="gordo_gradle.webp">
     </section>
   `,W.style.display="flex")});ut==null||ut.addEventListener("click",()=>{!W||!Ge||(Ge.innerHTML=`
     <p>sabes que le pasa a los curiosos?</p>
