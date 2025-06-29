@@ -4,6 +4,15 @@ import phrases from "./phrases.json";
 
 import type { CareerDB, Elective } from "./types.ts";
 
+window.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    info_button && (info_button.disabled = false);
+    links_button && (links_button.disabled = false);
+    tree_button && (tree_button.disabled = false);
+    career && (career.disabled = false);
+  }, 5800);
+});
+// Mr nothing was here :P 
 const subtext = document.querySelector("#subtext") as HTMLElement | null;
 if (subtext && Array.isArray(phrases)) {
   subtext.textContent = phrases[Math.floor(Math.random() * phrases.length)];
@@ -151,12 +160,12 @@ function clear_selection() {
     .attr("fill-opacity", 0.5);
 }
 
-const info_button = document.querySelector("#info") as HTMLElement | null;
-const links_button = document.querySelector("#links") as HTMLElement | null;
+const info_button_query = document.querySelector("#info") as HTMLButtonElement | null;
+const links_button_query = document.querySelector("#links") as HTMLButtonElement | null;
 const modal = document.querySelector("#modal") as HTMLElement | null;
 const modal_content = document.querySelector("#modal-content") as HTMLElement | null;
 const close_modal = document.querySelector("#modal_close") as HTMLElement | null;
-const tree_button = document.querySelector("#tree_button") as HTMLElement | null;
+const tree_button = document.querySelector("#tree_button")  as HTMLButtonElement | null;
 const tree = document.querySelector("#tree") as HTMLElement | null;
 const container = document.querySelector(".container") as HTMLElement | null;
 const tree_ul = tree?.querySelector("ul");

@@ -38,15 +38,17 @@ header,
 footer {
   padding: 2rem;
   width: 100%;
-}
-
-footer {
   display: flex;
   justify-content: center;
 }
 
 li {
   list-style: none;
+}
+
+select:disabled,
+button:disabled{
+ pointer-events: none;
 }
 
 button {
